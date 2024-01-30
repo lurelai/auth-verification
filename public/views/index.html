@@ -12,22 +12,31 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1>A login system using JWT token</h1>
+            <h1 class='header__title'>A login system using JWT token</h1>
         </header>
 
         <main>
-            <section class="section">
+            <section class="section login-section">
                 <header class="section-header">
-                    <h2>Sign in</h2>
+                    <h2 class='section__title'>Sign in</h2>
                 </header>
-                <form class="form" action=""></form>
+                <form class="form" action="">
+                    <input type="text" placeholder='Nickname or email'>
+                    <input type="password" placeholder='Password'>
+                    <input type="submit" value='Send'>
+                </form>
             </section>
 
-            <section class="section">
+            <section class="section register-section">
                 <header class="section-header">
-                    <h2>Sign up</h2>
+                    <h2 class='section__title'>Sign up</h2>
                 </header>
-                <form class="form" action=""></form>
+                <form class="form" action="">
+                    <input type="text" placeholder='Nickname'>
+                    <input type="text" placeholder='Email'>
+                    <input type="text" placeholder='Password'>
+                    <input type="submit" value="send">
+                </form>
             </section>
         </main>
     </div>

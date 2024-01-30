@@ -4,3 +4,25 @@
     box-sizing: border-box;
 }
 
+.body, .container{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.header{
+    height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title{
+    
+}
+
+.login-section{
+    background-color: red;
+}
+
+
