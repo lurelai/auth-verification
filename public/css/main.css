@@ -5,7 +5,6 @@
 }
 
 .body, .container{
-    width: 100vw;
     min-height: 100vh;
 }
 
@@ -17,12 +16,36 @@
     align-items: center;
 }
 
-.header__title{
-    
+.section{
+    height: 470px;
+}
+
+.section > *{
+    width: 500px;
+}
+
+.section-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+}
+
+.section__title{
+    font-size: 30px; 
+}
+
+.login-section > *{
+    color: white;
 }
 
 .login-section{
-    background-color: red;
+    background-color: #000;
 }
 
+.form__input{
+    border: 0 none;
+    text-align: center;
+}
 
