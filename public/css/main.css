@@ -16,6 +16,10 @@
     align-items: center;
 }
 
+.header__title{
+    font-size: 38px;
+}
+
 .section{
     height: 470px;
 }
@@ -33,7 +37,8 @@
 }
 
 .section__title{
-    font-size: 30px; 
+    font-family: 'Inconsolata';
+    font-size: 30px;
 }
 
 .login-section > *{
