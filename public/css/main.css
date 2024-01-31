@@ -107,6 +107,14 @@
     background-color: white; 
 }
 
+.login-section .form__submit:focus{
+    background-color: #111;
+}
+
+.register-section .form__submit:focus{
+    background-color: antiquewhite;
+}
+
 .form__submit{
     width: 150px;
 }
