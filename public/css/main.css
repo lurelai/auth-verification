@@ -6,6 +6,8 @@
 
 .body, .container{
     min-height: 100vh;
+
+    padding-bottom: 60px;
 }
 
 .header{
@@ -22,10 +24,16 @@
 
 .section{
     height: 470px;
+
+    display: grid;
+    align-content: start;
+    grid-row-gap: 20px;
+
 }
 
 .section > *{
     width: 500px;
+
 }
 
 .section-header{
@@ -47,10 +55,52 @@
 
 .login-section{
     background-color: #000;
+
+    padding-left: 30px;
+}
+
+.register-section{
+    justify-content: end;
+
+    padding-right: 30px;
+}
+
+.form{
+    display: grid;
+    justify-items: center;
+
+    height: 300px;
+}
+
+.login-section .form{
+    grid-template-rows: 50px 50px 30px;
+    grid-row-gap: 10px;
+}
+
+.login-section .form__input{
+    background-color: #000;
+    color: white;
+
+    border: 2px solid white;
 }
 
 .form__input{
     border: 0 none;
     text-align: center;
+    width: 100%;
+
+    border-radius: 4px;
+}
+
+.form__submit{
+    width: 150px;
+}
+
+.form__submit:hover{
+    cursor: pointer;
+}
+
+.form__input:focus{
+    outline: none;
 }
 
