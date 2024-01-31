@@ -77,6 +77,11 @@
     grid-row-gap: 10px;
 }
 
+.register-section .form{
+    grid-template-rows: 50px 50px 50px 30px;
+    grid-row-gap: 10px;
+}
+
 .login-section .form__input{
     background-color: #000;
     color: white;
@@ -84,12 +89,22 @@
     border: 2px solid white;
 }
 
+.register-section .form__input{
+    border: 2px solid black;
+}
+
 .form__input{
+    font-weight: bold;
+
     border: 0 none;
     text-align: center;
     width: 100%;
 
     border-radius: 4px;
+}
+
+.register-section .form__submit{
+    background-color: white; 
 }
 
 .form__submit{
