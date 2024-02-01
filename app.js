@@ -1,6 +1,8 @@
 const express = require('express')
 const path = require('path')
 
+// Import routes
+
 const app = express()
 
 // uses
@@ -10,6 +12,10 @@ app.use(express.urlencoded({extended: true}))
 
 // Statics
 app.use('/public', express.static(path.join(__dirname, '/public')))
+
+
+// set routes
+require('./src/routes/registerRoute')(app)
 
 
 // default route
