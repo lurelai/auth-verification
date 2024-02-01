@@ -17,8 +17,8 @@ app.use('/public', express.static(path.join(__dirname, '/public')))
 // set routes
 require('./src/routes/registerRoute')(app)
 require('./src/routes/loginRoute')(app)
+require('./src/routes/surpiseRoute')(app)
 
-const db = new Database;
 
 // default route
 app.get('/', (req, res)=>{
