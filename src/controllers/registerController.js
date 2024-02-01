@@ -1,4 +1,4 @@
-const createNewUser = require('../services/userService')
+const { create } = require('../services/userService')
 
 const registerController = (req, res)=>{
     const { name, email, password } = req.body
@@ -6,7 +6,7 @@ const registerController = (req, res)=>{
     if(!name || !email || !password )
         return res.send({message: 'Bad requestion'})
 
-    createNewUser(req.body)
+    create(req.body)
     return res.send({message: 'user created'})
 }
 

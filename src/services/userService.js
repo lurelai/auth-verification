@@ -2,8 +2,12 @@ const userModel = require('../models/userModel')
 
 const create = (body)=>{
     userModel.create = body; 
-    console.log(userModel.getDatabase)
+    console.log(userModel.getInfo)
 }
 
-module.exports = create;
+const verify = (nameOrEmail, password)=>{
+    console.log(userModel.verify(nameOrEmail, password))
+}
+
+module.exports = { create, verify }
 
