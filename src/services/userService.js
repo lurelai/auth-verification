@@ -6,7 +6,7 @@ const create = (body)=>{
 }
 
 const verify = (nameOrEmail, password)=>{
-    console.log(userModel.verify(nameOrEmail, password))
+    return userModel.verify(nameOrEmail, password)
 }
 
 module.exports = { create, verify }
