@@ -14,8 +14,11 @@ class Database{
         this.updateId()
     }
 
-    get getDatabase(){
+    get getInfo(){
         return Database.infos
+    }
+
+    find(id){
     }
 }
 
