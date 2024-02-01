@@ -6,8 +6,8 @@ const loginController = (req, res)=>{
     if(!nameOrEmail || !password)
         return res.send({message: 'bad requestion'})
 
-    verify(nameOrEmail, password)
-    return res.send({massage: 'okay'})
+    const info = verify(nameOrEmail, password)
+    return res.send(info)
 }
 
 module.exports = loginController
