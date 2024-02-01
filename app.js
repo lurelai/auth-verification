@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-const Database = require('./src/database/memoryDatabase')
+const authMiddlewares = require('./src/middlewares/authMiddleware')
 
 // Import routes
 const app = express()
@@ -21,7 +21,7 @@ require('./src/routes/surpiseRoute')(app)
 
 
 // default route
-app.get('/', (req, res)=>{
+app.get('/', authMiddlewares, (req, res)=>{
     return res.sendFile(path.join(__dirname, '/public/views/index.html'))
 })
 
