@@ -17,12 +17,12 @@ app.use('/public', express.static(path.join(__dirname, '/public')))
 // set routes
 require('./src/routes/registerRoute')(app)
 require('./src/routes/loginRoute')(app)
-require('./src/routes/surpiseRoute')(app)
+require('./src/routes/surpriseRoute')(app)
 
 
 // default route
 app.get('/', authMiddlewares, (req, res)=>{
-    return res.sendFile(path.join(__dirname, '/public/views/index.html'))
+    return res.sendFile(path.join(__dirname, './public/views/index.html'))
 })
 
 

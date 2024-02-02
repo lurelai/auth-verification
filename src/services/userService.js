@@ -1,5 +1,4 @@
 const userModel = require('../models/userModel')
-const jwt = require('jsonwebtoken')
 
 const create = (body)=>{
     userModel.create = body; 
